@@ -1,0 +1,17 @@
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  models_dir: outdata/models
+  vectors_dir: outdata/vectors
+  image_dir: outdata/images
+  logs_dir: outdata/logs
+  scripts: scripts
+  optuna_results: outdata/optuna_results
+
+cnn:
+  batch_size: 256
+  num_epochs: 200
+  learning_rate: 0.001
+  patience: 5
+
+

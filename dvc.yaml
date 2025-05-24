@@ -1,0 +1,22 @@
+stages:
+
+  download_data_stage:
+    cmd: python scripts/data_processing.py --tasks data:split_and_save_dataset
+    deps:
+    - scripts/data_processing.py
+    outs:
+      - data/raw/train.parquet
+      - data/raw/val.parquet
+      - data/raw/test.parquet
+
+  optuna_search_stage:
+    cmd: python scripts/nn_train.py --tasks data:run_optuna_search
+    deps:
+      - scripts/nn_train.py
+    outs:
+      - outdata/models/class_optuna_best_result.json
+      - outdata/models/class_optuna_study.pkl
+
+
+
+

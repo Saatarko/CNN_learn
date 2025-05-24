@@ -172,3 +172,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+.idea
+mlflow_artifacts/
+mlruns/
+data/
+outdata/
+dvc.lock
+init_airflow.sh
