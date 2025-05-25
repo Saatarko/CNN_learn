@@ -1,0 +1,11 @@
+{
+    "trial": 9,
+    "params": {
+        "activation": "leaky_relu",
+        "dropout": 0.2,
+        "optimizer": "AdamW",
+        "weight_decay": 0.0001,
+        "learning_rate": 0.01
+    },
+    "val_loss": 0.6181706163016233
+}

@@ -1,0 +1,36 @@
+schema: '2.0'
+stages:
+  download_data_stage:
+    cmd: python scripts/data_processing.py --tasks data:split_and_save_dataset
+    deps:
+    - path: scripts/data_processing.py
+      hash: md5
+      md5: 08eb34ef5abb82c41790bd6c38102db7
+      size: 1427
+    outs:
+    - path: data/raw/test.parquet
+      hash: md5
+      md5: 7be8078a81593daaba491780de75f2ac
+      size: 142587461
+    - path: data/raw/train.parquet
+      hash: md5
+      md5: 60b9044194a319d7f74c0ff29b49f792
+      size: 406402202
+    - path: data/raw/val.parquet
+      hash: md5
+      md5: c5fce76f3dc6fb2ba50ef2b2bba986ec
+      size: 171997249
+  evaluate_best_model_stage:
+    cmd: python scripts/nn_train.py --tasks data:evaluate_best_model
+    deps:
+    - path: scripts/nn_train.py
+      hash: md5
+      md5: efaea069dd8445f9aa3c00aeb5d197b3
+      size: 26843
+  train_best_model_stage:
+    cmd: python scripts/nn_train.py --tasks data:best_model_train
+    deps:
+    - path: scripts/nn_train.py
+      hash: md5
+      md5: fa35c4659b7cdab91482a79babb95fb5
+      size: 27399

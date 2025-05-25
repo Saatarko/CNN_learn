@@ -1,0 +1,11 @@
+{
+    "trial": 5,
+    "params": {
+        "activation": "swish",
+        "dropout": 0.2,
+        "optimizer": "AdaBelief",
+        "weight_decay": 0.001,
+        "learning_rate": 0.01
+    },
+    "val_loss": 0.6928968673402612
+}

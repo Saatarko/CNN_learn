@@ -1,0 +1,11 @@
+{
+    "trial": 4,
+    "params": {
+        "activation": "mish",
+        "dropout": 0.0,
+        "optimizer": "Adam",
+        "weight_decay": 0.0001,
+        "learning_rate": 0.01
+    },
+    "val_loss": 0.5303096825426276
+}

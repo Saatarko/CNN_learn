@@ -1,0 +1,11 @@
+{
+    "trial": 1,
+    "params": {
+        "activation": "relu",
+        "dropout": 0.0,
+        "optimizer": "AdamW",
+        "weight_decay": 0.0001,
+        "learning_rate": 0.01
+    },
+    "val_loss": 0.6073076345703818
+}

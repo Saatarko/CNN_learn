@@ -17,6 +17,15 @@ stages:
       - outdata/models/class_optuna_best_result.json
       - outdata/models/class_optuna_study.pkl
 
+  evaluate_best_model_stage:
+    cmd: python scripts/nn_train.py --tasks data:evaluate_best_model
+    deps:
+      - scripts/nn_train.py
 
+
+  train_best_model_stage:
+    cmd: python scripts/nn_train.py --tasks data:best_model_train
+    deps:
+      - scripts/nn_train.py
 
 

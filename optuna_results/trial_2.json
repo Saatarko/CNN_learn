@@ -1,0 +1,11 @@
+{
+    "trial": 2,
+    "params": {
+        "activation": "sigmoid",
+        "dropout": 0.2,
+        "optimizer": "Adam",
+        "weight_decay": 0.0001,
+        "learning_rate": 0.01
+    },
+    "val_loss": 0.6939701383764093
+}

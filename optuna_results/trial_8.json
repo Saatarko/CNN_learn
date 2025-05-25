@@ -1,0 +1,11 @@
+{
+    "trial": 8,
+    "params": {
+        "activation": "tanh",
+        "dropout": 0.2,
+        "optimizer": "RMSProp",
+        "weight_decay": 0.0001,
+        "learning_rate": 1e-06
+    },
+    "val_loss": 0.7033874555067583
+}

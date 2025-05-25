@@ -177,5 +177,5 @@ mlflow_artifacts/
 mlruns/
 data/
 outdata/
-dvc.lock
+mlartifacts/
 init_airflow.sh

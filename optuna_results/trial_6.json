@@ -1,0 +1,11 @@
+{
+    "trial": 6,
+    "params": {
+        "activation": "tanh",
+        "dropout": 0.2,
+        "optimizer": "AdamW",
+        "weight_decay": 0.001,
+        "learning_rate": 0.01
+    },
+    "val_loss": 0.6243271069093184
+}
